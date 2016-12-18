@@ -3,7 +3,7 @@ jdk:
   - oraclejdk8
 install:
   - mvn --version
-  - mvn -s settings.xml clean install
+  - mvn -s settings.xml clean install -Dmaven.test.skip=true
 deploy:
   provider: openshift
   user: kicoamorim@gmail.com
