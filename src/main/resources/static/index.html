@@ -1,27 +1,63 @@
 <!DOCTYPE html>
 <html>
-	<head><title>React + SpringBoot</title></head>
+	<head>
+		<title>React + SpringBoot</title>
+
+	</head>
 	<body>
 		<div id="root"></div>
-		
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 		<script src="https://fb.me/react-15.0.1.js"></script>
 		<script src="https://fb.me/react-dom-15.0.1.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+
+
 		<script type="text/babel">
 			var Employee = React.createClass({
 				render: function(){
-					return (<div>employee</div>);
+					return (
+						<tr>
+							<td>{this.props.employee.name}</td>
+							<td>{this.props.employee.age}</td>
+							<td>{this.props.employee.years}</td>
+						</tr>
+					);
 				}
 			});
 			var EmployeeTable = React.createClass({
 				render: function(){
-					return (<div>Kicoamorim Amorim</div>);
+					var rows = [];
+					this.props.employees.forEach(function(employee){
+						rows.push(<Employee employee={employee}/>);
+					});
+					return (
+						<div className="container"> 
+							<table className="table table-striped">
+								<thead>
+									<tr>
+										<th>Nome</th>
+										<th>Age</th>
+										<th>Years</th>
+									</tr>
+								</thead>
+								<tbody>{rows}</tbody>
+							</table>
+						</div>
+					);
 				}
 			});
 
+
+			var EMPLOYEES = [
+				{name:'Nome1',age:21,years:4},
+				{name:'Nome1',age:31,years:5},
+				{name:'Nome1',age:41,years:6}
+			];
+
 			ReactDOM.render(
-				<EmployeeTable/>,document.getElementById('root')
+				<EmployeeTable employees={EMPLOYEES}/>,document.getElementById('root')
 			);
 		</script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	</body>
 </html>

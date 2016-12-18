@@ -10,3 +10,5 @@ Source Code : **https://github.com/luisamorim/spring-boot-openshift-blank.git**
 
 Branch/Tag: master
 
+travis setup openshift
+remove .mvnw*
