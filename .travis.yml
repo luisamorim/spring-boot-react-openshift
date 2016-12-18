@@ -7,8 +7,8 @@ install:
   - export MAVEN_OPTS="-Xms384m -Xmx412m"
   - export PATH=$JAVA_HOME/bin:$PATH
   - cd $OPENSHIFT_REPO_DIR
-  - $M2/mvn --version
-  - $M2/mvn -s settings.xml clean install -Dmaven.test.skip=true
+  - mvn --version
+  - mvn -s settings.xml clean install -Dmaven.test.skip=true
 after_success:
   - source $OPENSHIFT_CARTRIDGE_SDK_BASH
   - set -x
