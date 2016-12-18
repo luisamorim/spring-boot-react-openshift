@@ -9,4 +9,4 @@ deploy:
   app: spring-boot-react-openshift
   domain: crazytech
   on:
-    repo: luisamorim/spring-boot-react-openshift
+    repo: kicoamorim/springbootreact
