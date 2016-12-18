@@ -8,7 +8,5 @@ deploy:
   user: kicoamorim@gmail.com
   password:
     secure: SGzlLe1yLlNwPZaB9Aum5T7iM+qyiU4tIw/dyd91rLHEWMAlZtgXq5/GX866AQukitKH48XUrckSjq23WDz5v0TUWK5zTe1EhHW5ft82mkBc5i7FXEyjc6A8Q4J+iV3NZwkM1ZnzXV2y1uBAfg54fvZGzYZYrEFgZqmuTHu0XmyzUWSy4am1+M1ODtdI0ANOXP+CUzn8R7a9O0IiP6XC7cyTRXZEhirSN1iJb+aJptyOYUUO7dDqbJxrZBTI9NwQN6YCJrk1/wdHcJBGoWDBLK1TcBjEW5S+1DGLsgHAHBOE0i4m1xBQFDl8+GjarGNWYqq4XtOZphQ7g7s3g0XMcHnf1u7Fou+9/S0BpHfeyljg5mR3CXDWqwBjHJAeV+bToWVbGd4LQHgG834p75KF14Cb26pX/dM39ZMWtQjMeciYRc30gnP0I732mt4hFZ/Dk2y0jc3ma1Y1zBLFRJdE4Q40+B57e8ArjgDvJsRZySVdC98SanzZEEGFXOgXM7rKusKTXgo6V3o+BkRAE8hn9+RHVfBM4y+aOEzV8PejyncW92fsWXH6m68Le5LuoYwN7NlJrz6anZYmFEuvQCwkAiMZlZx2waRdd8DurvPCbORm8Y+OpM1YLhf2va1bMpnYR72lzZjGB+y4+j4Gy/RQ1yEVfwtRxTHDmxTkrR6qQ7A=
-  app: spring-boot-react-openshift
+  app: springbootreact
   domain: crazytech
-  on:
-    repo: kicoamorim/springbootreact
