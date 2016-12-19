@@ -58,7 +58,7 @@
 			var App = React.createClass({
 				loadEmployeeFromServer: function(){
 					var self = this;
-					$.ajax({url:'http://localhost:8080/api/employees'}).
+					$.ajax({url:'/api/employees'}).
 					then(function(data){
 						self.setState({employees: data._embedded.employees});
 					});
