@@ -19,6 +19,7 @@ public class DataLoader implements CommandLineRunner{
 		this.repository.save(new Employee("Luis Amorim",62, 10));
 		this.repository.save(new Employee("Adriano",63, 13));
 		this.repository.save(new Employee("Regis",64, 14));
+		this.repository.save(new Employee("Jaco Pastorius",60,15));
 		
 	}
 }
