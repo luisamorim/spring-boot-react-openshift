@@ -16,6 +16,6 @@ public class DataLoader implements CommandLineRunner{
 	
 	@Override
 	public void run(String... arg0) throws Exception {
-		this.repository.save(new Employee("Diego",62, 10));		
+		this.repository.save(new Employee("Lucas",62, 10));		
 	}
 }
